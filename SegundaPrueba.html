@@ -1,77 +1,75 @@
 <!DOCTYPE html>
-<html lang = "es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body><!--Esto es una prueba del form-->
-        <form>
-            <!---primera tabla-->
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-            <br>
-        </form>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Librería de iconos6 -->
+<script src="https://unpkg.com/feather-icons"></script>
+<style>
+body {font-family: 'Times New Roman', Times, serif;}
+* {box-sizing: border-box;}
 
-            <!---segunda-->
-            <form>
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-            <br>
-        
+.input-container {
+  display: user; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
 
-            
+.icon {
+  padding: 10px;
+  background: rgb(98, 108, 117);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
 
-            </form>
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
 
-            <!---primera tabla-->
-<form>
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-        </form>
-            <!---primera tabla-->
-            <form>
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-        </form>
-            <!---primera tabla-->
-            <form>
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-        </form>
-            <!---primera tabla-->
-            <form>
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-            <form>
-            <!---primera tabla-->
-        </form>
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-            <form>
-            <!---primera tabla-->
-        </form>
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-            <form>
-            <!---primera tabla-->
- </form>
-            <i class="llave" style="font-size:24px;"></i>
-            <label for="fname">id_usr:</label>
-            <input type =id_usr id = nombre name = "identifica"
-        </body>
-    </body>
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
 
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
 
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
 
+<form action="/action_page.php" style="max-width:500px;margin:auto">
+  <h2>Register Form</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
 
+  <div class="input-container">
+    <i class="fa fa - user"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+
+  <button type="submit" class="btn">Register</button>
+</form>
+
+</body>
 </html>
