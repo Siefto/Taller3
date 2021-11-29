@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>materialize2</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<meta charset="utf-8">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('select').formSelect();
+			 $('.datepicker').datepicker({
+			 	format:'dd/mm/yyyy'
+			 });
+		});
+
+		$(document).on('submit', '#registro', function(e){
+			e.preventDefault();
+			console.log($(this).serialize());
+		});
+	</script>
+
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="indigo lighten-5">
+    <div class="navbar-fixed"> 
+        <nav>
+          <div class="nav-wrapper blue">
+            <ul class="right hide-on-med-and-down">
+              <li><a href="Pagina principal.html">Taller3</a></li>
+              <li><a href="pagina1.html">Pagina redirección</a></li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+    <div class="container white" style="min-height:100vh; padding:20px">
+      <div class="center"><h3 style="color:rgb(99, 3, 177);">Registro carro</h3></div>
+        <div class="row">
+            <form method="post" id="chcUsuarios">
+
+                <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">airport_shuttle</i>
+                    <input type="text" name="idCoche" id="idCoche">
+                    <label for="idCoche">Identificación del coche</label>
+                  </div>
+                <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">airport_shuttle</i>
+                    <input type="text" name="modelo" id="modelo">
+                    <label for="modelo">Modelo</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">toys</i>
+                    <input type="text" name="caja" id="caja">
+                    <label for="caja">Caja</label>
+                  </div>
+
+                  <div class="clearfix"></div>
+                  <div class="input-field col l5 col-m5">
+                      <i class="material-icons prefix">date_range</i>
+                      <input class="datepicker" type="text" name="año" id="año">
+                      <label for="año">Año</label>
+                  </div>
+
+
+                  <div class="input-field col l7 col-m7">
+                    <i class="material-icons prefix">format_align_justify</i>
+                    <input type="text" name="detalle" id="detalle">
+                    <label for="detalle">Detalle</label>
+                  </div>
+                
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">build</i>
+                    <input type="text" name="motor" id="motor">
+                    <label for="motor">Motor</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">store_mall_directory</i>
+                    <select name="marcaCoche">
+                      <option value="" disabled selected>Marca del coche</option>
+                      <option value="Afganistan">Abarth</option>
+                      <option value="Albania">Alfa Romeo</option>
+                      <option value="Algeria">Aston Martin</option>
+                      <option value="Afganistan">Audi</option>
+                      <option value="Albania">Bentley</option>
+                      <option value="Algeria">BMW</option>
+                      <option value="Afganistan">Cadillac</option>
+                      <option value="Albania">Caterham</option>
+                      <option value="Algeria">Chevrolet</option>
+                      <option value="Afganistan">Citroen</option>
+                      <option value="Albania">Dacia</option>
+                      <option value="Algeria">Ferrari</option>
+                      <option value="Afganistan">Fiat</option>
+                      <option value="Albania">Ford</option>
+                      <option value="Algeria">Honda</option>
+                      <option value="Afganistan">Infiniti</option>
+                      <option value="Albania">Isuzu</option>
+                      <option value="Algeria">Iveco</option>
+                      <option value="Albania">Jaguar</option>
+                      <option value="Algeria">Jeep</option>
+                      <option value="Albania">Kia</option>
+                      <option value="Algeria">KTM</option>
+                      <option value="Albania">Lada</option>
+                      <option value="Algeria">Lamborghini</option>
+                      <option value="Albania">Lancia</option>
+                      <option value="Algeria">Land Rover</option>
+                      <option value="Albania">Lexus</option>
+                      <option value="Algeria">Lotus</option>
+                      <option value="Albania">Maserati</option>
+                      <option value="Algeria">Mazda</option>
+                      <option value="Albania">Mercedes-Benz</option>
+                      <option value="Algeria">Mini</option>
+                      <option value="Albania">Mitsubishi</option>
+                      <option value="Algeria">Morgan</option>
+                      <option value="Albania">Nissan</option>
+                      <option value="Algeria">Opel</option>
+                      <option value="Albania">Peugeot</option>
+                      <option value="Algeria">Piaggio</option>
+                      <option value="Albania">Porsche</option>
+                      <option value="Algeria">Renault</option>
+                      <option value="Albania">Rolls-Royce</option>
+                      <option value="Algeria">Seat</option>
+                      <option value="Albania">Skoda</option>
+                      <option value="Algeria">Smart</option>
+                      <option value="Albania">SsangYong</option>
+                      <option value="Algeria">Subaru</option>
+                      <option value="Albania">Suzuki</option>
+                      <option value="Algeria">Tata</option>
+                      <option value="Albania">Tesla</option>
+                      <option value="Algeria">Toyota</option>
+                      <option value="Albania">Volkswagen</option>
+                      <option value="Algeria">Volvo</option>
+                    </select>
+                    <label> Marca coche</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">star_half</i>
+                    <select name="tipoCoche">
+                      <option value="" disabled selected>Tipo de coche</option>
+                      <option value="Afganistan">Urbano</option>
+                        <option value="Albania">Subcompacto</option>
+                        <option value="Algeria">Hatchback/ compacto</option>
+                        <option value="American Samoa">Familiar</option>
+                        <option value="Andorra">Sedán</option>
+                        <option value="Angola">Berlina</option>
+                        <option value="Anguilla">Descapotable</option>
+                        <option value="Antigua & Barbuda">Coupé</option>
+                        <option value="Argentina">Pony carl Muscle car</option>
+                        <option value="Armenia">Deportivo/ Hypercar</option>
+                        <option value="Aruba">Mega GT</option>
+                        <option value="Australia">Monovolumen</option>
+                        <option value="Austria">Todoterreno / SUVI</option>
+                        <option value="Azerbaijan">Comercial</option>
+                        <option value="Bahamas">Autocaravana</option>
+                        <option value="Bahrain">Pick Up</option>
+                        <option value="Bangladesh">Clásico</option>
+                        <option value="Barbados">One off</option>
+                        <option value="Belarus">Limusina</option>
+                    </select>
+                    <label> Tipo de coche</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <select name="estadoCoche">
+                      <option value="" disabled selected>Estado del coche</option>
+                      <option value="Afganistan">Concesionario</option>
+                        <option value="Albania">Nuevo</option>
+                        <option value="Algeria">Antiguo</option>
+                        <option value="American Samoa">Usado</option>
+                        <option value="American Samoa">Dañado</option>
+                    </select>
+                    <label> Estado coche</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">local_gas_station</i>
+                    <select name="tipoCombustible">
+                      <option value="" disabled selected>Tipo de combustible</option>
+                      <option value="Afganistan">Carbón</option>
+                      <option value="Albania">Petróleo</option>
+                      <option value="Algeria">Gas Natural</option>
+                    </select>
+                    <label> Tipo combustible</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">account_circle</i>
+                    <select name="idUser">
+                      <option value="" disabled selected>Persona tipo</option>
+                      <option value="Afganistan">Natural</option>
+                      <option value="Albania">Juridica</option>
+                    </select>
+                    <label> Persona</label>
+                  </div>
+
+                  <div class="clearfix"></div>
+                  <div class="input-field col l4 col-m4">
+                      <i class="material-icons prefix">access_time</i>
+                      <input class="datepicker" type="text" name="fechapu" id="fechapu">
+                      <label for="fechapu">Fecha publicación</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">casino</i>
+                    <input type="text" name="precio" id="precio">
+                    <label for="precio">Precio</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">monetization_on</i>
+                    <input type="text" name="moneda" id="moneda">
+                    <label for="moneda">Moneda</label>
+                  </div>
+
+                  <div class="input-field col l4 col-m4">
+                    <i class="material-icons prefix">monetization_on</i>
+                    <textarea id="descripción coche" class="materialize-textarea"></textarea>
+                    <label for="descripción">descripción Auto</label>
+                  </div>
+
+                  <div class="clearfix"></div>
+                  <div class="input-field col l8 col-m8">
+                      <div class="btn">
+                          <span> Adjunte una imagen del auto</span>
+                          <input type="file" multiple="true">
+                      </div>
+                      <div class="file-path-wrapper">
+                          <input type="text" class="file-path">
+                      </div>
+
+                  <div class="clearfix"></div>
+                  <button type="submit" class="btn waves-effect">
+                      <i class="material-icons right">check</i>
+                      Registrarse
+                  </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var sel=document.querySelectorAll('select');
+    M.FormSelect.init(sel);
+  });
+    </script>
+</body>
+</html>
